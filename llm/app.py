@@ -10,7 +10,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import math
 
 # Configurar API key de OpenAI
-openai.api_key = 'sk-dcru9veuokTpZscsvqF54YDe0w4jFPVHnXTAbuBjzTT3BlbkFJXDKNeqw4U6L_QPPQKaAtdFveJfzZVkhIkk_2XWwhUA'
+openai.api_key = ''
 
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=5000):
