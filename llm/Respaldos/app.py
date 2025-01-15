@@ -8,7 +8,7 @@ import torch.optim as optim
 import os
 
 # Configurar API key de OpenAI
-openai.api_key = 'sk-proj-MGRLbtygqPXT2roYySMIT3BlbkFJALAGbbagZ6UYNaXm2ziO'
+openai.api_key = ''
 
 class TonyNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):

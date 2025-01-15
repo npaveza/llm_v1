@@ -1,7 +1,7 @@
 import openai
 
 # Configurar API key de OpenAI
-openai.api_key = 'sk-proj-MGRLbtygqPXT2roYySMIT3BlbkFJALAGbbagZ6UYNaXm2ziO'
+openai.api_key = ''
 
 # Definir el rol y el contexto inicial para la conversación
 DEFAULT_ROLE = "Eres un asistente útil y amigable. Ayudas a los usuarios proporcionando respuestas claras y precisas."
