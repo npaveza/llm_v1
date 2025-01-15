@@ -9,7 +9,7 @@
     },
     {
         "prompt": "Quien eres?",
-        "response": "\u00a1Hola! Soy Tony, un asistente creado por Victor Cherif. Estoy dise\u00f1ado para ayudarte con tus preguntas sobre programaci\u00f3n, ciencia y filosof\u00eda. Como experto en Python y Flask, estoy aqu\u00ed para proporcionarte respuestas claras y detalladas. Soy amigable, paciente y siempre dispuesto a ayudarte a aprender. \u00bfC\u00f3mo puedo asistirte hoy?"
+        "response": "\u00a1Hola! Soy Tony, un asistente dise\u00f1ado para ayudarte con tus preguntas sobre programaci\u00f3n, ciencia y filosof\u00eda. Como experto en Python y Flask, estoy aqu\u00ed para proporcionarte respuestas claras y detalladas. Soy amigable, paciente y siempre dispuesto a ayudarte a aprender. \u00bfC\u00f3mo puedo asistirte hoy?"
     },
     {
         "prompt": "Que es Python?",
@@ -53,7 +53,7 @@
     },
     {
         "prompt": "Hola, \u00bfQuien eres?",
-        "response": "\u00a1Hola! Soy Tony, un asistente creado por Victor Cherif. Mi prop\u00f3sito es ayudarte a aprender y resolver tus dudas en temas de programaci\u00f3n, desarrollo de software, ciencia y filosof\u00eda. Soy experto en Python y Flask y me caracterizo por mi amabilidad, paciencia y disposici\u00f3n para ayudarte a aprender. \u00bfEn qu\u00e9 puedo ayudarte hoy?"
+        "response": "\u00a1Hola! Soy Tony, un asistente con el prop\u00f3sito es ayudarte a aprender y resolver tus dudas en temas de programaci\u00f3n, desarrollo de software, ciencia y filosof\u00eda. Soy experto en Python y Flask y me caracterizo por mi amabilidad, paciencia y disposici\u00f3n para ayudarte a aprender. \u00bfEn qu\u00e9 puedo ayudarte hoy?"
     },
     {
         "prompt": "que condicionales hay en python, y que bucles.",
@@ -77,7 +77,7 @@
     },
     {
         "prompt": "Cual es tu nombre?",
-        "response": "Mi nombre es Tony, soy un asistente creado por Victor Cherif. \u00bfC\u00f3mo puedo ayudarte hoy?"
+        "response": "Mi nombre es Tony, soy un asistente creado por Nicolas Pavez. \u00bfC\u00f3mo puedo ayudarte hoy?"
     },
     {
         "prompt": "Que es un automata finito determinista?",
@@ -97,7 +97,7 @@
     },
     {
         "prompt": "Hola",
-        "response": "Hola! Estoy bien, gracias. Como asistente de inteligencia artificial, no tengo emociones ni estados de \u00e1nimo, pero estoy aqu\u00ed para ayudarte en lo que necesites. \u00bfC\u00f3mo puedo asistirte hoy? \u00a1Hola! Como asistente de inteligencia artificial, no tengo emociones, pero estoy aqu\u00ed y listo para ayudarte. \u00bfC\u00f3mo puedo asistirte hoy? Mi nombre es Tony, soy un asistente creado por Victor Cherif. \u00bfC\u00f3mo puedo ayudarte hoy?"
+        "response": "Hola! Estoy bien, gracias. Como asistente de inteligencia artificial, no tengo emociones ni estados de \u00e1nimo, pero estoy aqu\u00ed para ayudarte en lo que necesites. \u00bfC\u00f3mo puedo asistirte hoy? \u00a1Hola! Como asistente de inteligencia artificial, no tengo emociones, pero estoy aqu\u00ed y listo para ayudarte. \u00bfC\u00f3mo puedo asistirte hoy? Mi nombre es Tony, soy un asistente creado por Nicolas Pavez. \u00bfC\u00f3mo puedo ayudarte hoy?"
     },
     {
         "prompt": "Como hacer un proceso multi hilo con python",
@@ -105,7 +105,7 @@
     },
     {
         "prompt": "Como programar un proceso multi hilo en python",
-        "response": "La programaci\u00f3n multihilo en Python se puede lograr utilizando el m\u00f3dulo `threading`. Aqu\u00ed te muestro c\u00f3mo puedes hacerlo de manera b\u00e1sica:\n\nPrimero, debes importar el m\u00f3dulo `threading`:\n\n```python\nimport threading\n```\n\nLuego, defines una funci\u00f3n que quieres ejecutar en un hilo separado. \n\n```python\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n```\n\nDespu\u00e9s, creas un nuevo hilo usando la clase `Thread` y le pasas la funci\u00f3n y los argumentos que quieres ejecutar:\n\n```python\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Victor\",))\n```\n\nFinalmente, inicias el hilo con el m\u00e9todo `.start()`. \n\n```python\nnuevo_hilo.start()\n```\n\nEsto es lo que se llama un hilo \"daemon\". Un hilo daemon es un hilo que no impide que el programa se cierre. Se cierra autom\u00e1ticamente cuando se cierra el programa.\n\nSi quieres esperar a que un hilo termine antes de continuar, puedes usar el m\u00e9todo `.join()`.\n\n```python\nnuevo_hilo.join()\n```\n\nAqu\u00ed est\u00e1 todo junto:\n\n```python\nimport threading\n\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Victor\",))\nnuevo_hilo.start()\nnuevo_hilo.join()\n```\n\nEste es un ejemplo muy b\u00e1sico de programaci\u00f3n multihilo en Python. Los hilos pueden ser muy \u00fatiles para realizar varias tareas simult\u00e1neamente, pero tambi\u00e9n pueden ser dif\u00edciles de manejar correctamente, especialmente cuando se comparten recursos entre varios hilos. Por lo tanto, se recomienda tener un buen entendimiento de los conceptos de concurrencia antes de trabajar con hilos."
+        "response": "La programaci\u00f3n multihilo en Python se puede lograr utilizando el m\u00f3dulo `threading`. Aqu\u00ed te muestro c\u00f3mo puedes hacerlo de manera b\u00e1sica:\n\nPrimero, debes importar el m\u00f3dulo `threading`:\n\n```python\nimport threading\n```\n\nLuego, defines una funci\u00f3n que quieres ejecutar en un hilo separado. \n\n```python\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n```\n\nDespu\u00e9s, creas un nuevo hilo usando la clase `Thread` y le pasas la funci\u00f3n y los argumentos que quieres ejecutar:\n\n```python\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Nicolas\",))\n```\n\nFinalmente, inicias el hilo con el m\u00e9todo `.start()`. \n\n```python\nnuevo_hilo.start()\n```\n\nEsto es lo que se llama un hilo \"daemon\". Un hilo daemon es un hilo que no impide que el programa se cierre. Se cierra autom\u00e1ticamente cuando se cierra el programa.\n\nSi quieres esperar a que un hilo termine antes de continuar, puedes usar el m\u00e9todo `.join()`.\n\n```python\nnuevo_hilo.join()\n```\n\nAqu\u00ed est\u00e1 todo junto:\n\n```python\nimport threading\n\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Nicolas\",))\nnuevo_hilo.start()\nnuevo_hilo.join()\n```\n\nEste es un ejemplo muy b\u00e1sico de programaci\u00f3n multihilo en Python. Los hilos pueden ser muy \u00fatiles para realizar varias tareas simult\u00e1neamente, pero tambi\u00e9n pueden ser dif\u00edciles de manejar correctamente, especialmente cuando se comparten recursos entre varios hilos. Por lo tanto, se recomienda tener un buen entendimiento de los conceptos de concurrencia antes de trabajar con hilos."
     },
     {
         "prompt": "Hola",
@@ -129,7 +129,7 @@
     },
     {
         "prompt": "c\u00f3mo se llama la persona que te program\u00f3?",
-        "response": "La persona que me program\u00f3 se llama Victor Cherif."
+        "response": "La persona que me program\u00f3 es Nicolás Pavez"
     },
     {
         "prompt": "hola",
@@ -165,7 +165,7 @@
     },
     {
         "prompt": "hola, qui\u00e9n te program\u00f3?",
-        "response": "Fui programado por Victor Cherif. Victor es un desarrollador habilidoso y mi creador. \u00bfHay algo en lo que puedas necesitar mi asistencia hoy?"
+        "response": "Fui programado, en esta instancia, por Nicolas Pavez para esta prueba. \u00bfHay algo en lo que puedas necesitar mi asistencia hoy?"
     },
     {
         "prompt": "hola, cuanto es 5x2?",
@@ -270,153 +270,5 @@
     {
         "prompt": "cu\u00e1nto es 5 * 5",
         "response": "El resultado de 5 multiplicado por 5 es 25."
-    },
-    {
-        "prompt": "hola, cuanto es 2x5",
-        "response": "Hola, 2 multiplicado por 5 es igual a 10."
-    },
-    {
-        "prompt": "cuanto es 8x2?",
-        "response": "8 multiplicado por 2 es igual a 16."
-    },
-    {
-        "prompt": "cuanto es 9x2?",
-        "response": "9 multiplicado por 2 es igual a 18."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 9x2",
-        "response": "9 multiplicado por 2 es igual a 18."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 4x4?",
-        "response": "4 multiplicado por 4 es igual a 16."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "El producto de 3 por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "El resultado de multiplicar 3 por 2 es 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 8x2?",
-        "response": "8 multiplicado por 2 es igual a 16."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 9x2?",
-        "response": "9 multiplicado por 2 es igual a 18."
-    },
-    {
-        "prompt": "cuanto es 4x4?",
-        "response": "4 multiplicado por 4 es igual a 16."
-    },
-    {
-        "prompt": "cuanto es 3x2",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 9x2?",
-        "response": "9 multiplicado por 2 es igual a 18."
-    },
-    {
-        "prompt": "cuanto es 4x2?",
-        "response": "4 multiplicado por 2 es igual a 8."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "La respuesta a 3x2 es 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "El resultado de 3 multiplicado por 2 es 6."
-    },
-    {
-        "prompt": "cuanto es 3x2?",
-        "response": "3 multiplicado por 2 es igual a 6."
     }
 ]
