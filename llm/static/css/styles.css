@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+@apply max-w-full mx-auto p-4 bg-white rounded shadow-md;
+}
+
+.chat-container {
+@apply flex flex-col items-center p-4;
+}
+
+.chat-messages-container {
+@apply flex flex-col items-center p-4 bg-gray-100 rounded shadow-md;
+}
+
+#respuesta-container {
+@apply p-4 bg-white rounded shadow-md mb-4;
+}
+
+.chat-input-container {
+@apply p-4 bg-white rounded shadow-md;
+}
+
+.input-group {
+@apply flex items-center p-2 bg-white rounded shadow-md;
+}
+
+.input-group button {
+@apply mr-2;
+}
+
+.input-group textarea {
+@apply flex-1 p-2 border border-gray-300 rounded;
+resize: vertical;
+}
+
+footer {
+@apply text-center p-4 bg-white border-t border-gray-200;
+}

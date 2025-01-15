@@ -1,0 +1,422 @@
+[
+    {
+        "prompt": "Hola Tony",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Quien eres?",
+        "response": "\u00a1Hola! Soy Tony, un asistente creado por Victor Cherif. Estoy dise\u00f1ado para ayudarte con tus preguntas sobre programaci\u00f3n, ciencia y filosof\u00eda. Como experto en Python y Flask, estoy aqu\u00ed para proporcionarte respuestas claras y detalladas. Soy amigable, paciente y siempre dispuesto a ayudarte a aprender. \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "Que es Python?",
+        "response": "Python es un lenguaje de programaci\u00f3n interpretado, de alto nivel y de prop\u00f3sito general. Fue creado por Guido van Rossum y fue lanzado por primera vez en 1991.\n\nPython tiene un enfoque en la legibilidad del c\u00f3digo, lo que permite que los programas escritos en este lenguaje sean mucho m\u00e1s f\u00e1ciles de leer y entender. Esto se logra, entre otras cosas, mediante el uso de identaci\u00f3n para delimitar bloques de c\u00f3digo en lugar de corchetes o llaves, como en otros lenguajes.\n\nEs un lenguaje muy vers\u00e1til y poderoso, que se utiliza en una amplia variedad de aplicaciones, desde desarrollo web y an\u00e1l"
+    },
+    {
+        "prompt": "Cual es la estructura basica de un python y Flask para hacer una web",
+        "response": "Un proyecto b\u00e1sico de Flask tiene una estructura de directorio bastante sencilla. Aqu\u00ed te muestro c\u00f3mo ser\u00eda:\n\n```\n/myflaskproject\n    /venv\n    /app\n        __init__.py\n        routes.py\n        /templates\n            index.html\n        /static\n            style.css\n    run.py\n```\n\nAqu\u00ed tienes una breve descripci\u00f3n de lo que hace cada archivo:\n\n- `venv`: Es el directorio donde se almacena tu entorno virtual de Python. Esto te permite instalar paquetes de Python que solo se utilizan en este proyecto en particular y no interfieren con otros proyectos.\n\n- `run.py`: Es el script que inicia"
+    },
+    {
+        "prompt": "Como seria el codigo python para un pagina con flask",
+        "response": "Claro, aqu\u00ed te dejo un ejemplo b\u00e1sico de una aplicaci\u00f3n web usando Flask en Python. Este programa simplemente muestra \"\u00a1Hola, Mundo!\" en la p\u00e1gina web.\n\n```python\nfrom flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return \"\u00a1Hola, Mundo!\"\n\nif __name__ == \"__main__\":\n    app.run(debug=True)\n```\n\nAqu\u00ed te explico brevemente lo que hace cada parte del c\u00f3digo:\n\n1. Primero, importamos la clase `Flask` del m\u00f3dulo `flask`. Este ser\u00e1 nuestro punto de partida para crear la aplicaci\u00f3n.\n\n2. Luego, creamos una instancia de la clase `Flask`. El argumento `__name"
+    },
+    {
+        "prompt": "Hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Hola Tony",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Que es Python?",
+        "response": "Python es un lenguaje de programaci\u00f3n interpretado, de alto nivel y de prop\u00f3sito general. Fue creado por Guido van Rossum y fue lanzado por primera vez en 1991. Python tiene un dise\u00f1o de sintaxis simple que enfatiza la legibilidad y por lo tanto reduce el costo de mantenimiento del programa. Permite a los programadores expresar conceptos en menos l\u00edneas de c\u00f3digo que lo que ser\u00eda posible en lenguajes como C++ o Java.\n\nPython es un lenguaje de programaci\u00f3n din\u00e1mico y es muy utilizado debido a su f\u00e1cil lectura, con un c\u00f3digo que es mucho m\u00e1s claro y visible que otros lenguajes de programaci\u00f3n. Es usado para todo tipo de"
+    },
+    {
+        "prompt": "En python que es una tupla,una lista, y un diccionario.",
+        "response": "Claro, te explicar\u00e9 cada uno de ellos:\n\n1. **Lista**: En Python, una lista es una estructura de datos que puede contener cualquier tipo de elementos, como strings, n\u00fameros, objetos, e incluso otras estructuras de datos (como otras listas, tuplas y diccionarios). Las listas son mutables, lo que significa que puedes cambiar sus elementos. Una lista se define poniendo elementos entre corchetes `[]`, separados por comas. Por ejemplo: `mi_lista = [1, 'dos', 3.0]`.\n\n2. **Tupla**: Una tupla es similar a una lista en que puede contener elementos de cualquier tipo. Sin embargo, a diferencia"
+    },
+    {
+        "prompt": "Y que es un dicionario en python",
+        "response": "Un diccionario en Python es una estructura de datos que almacena pares de clave-valor. Es mutable, lo que significa que puedes agregar, eliminar y cambiar elementos despu\u00e9s de que se ha creado el dicionario.\n\nCada clave en el diccionario es \u00fanica y los valores pueden ser cualquier cosa: n\u00fameros, cadenas, listas, otros diccionarios, etc. Los diccionarios en Python se encierran entre llaves `{}` y los pares de clave-valor se separan por dos puntos `:`. Aqu\u00ed tienes un ejemplo:\n\n```python\nmi_diccionario = {\n    'clave1': 'valor1',\n    'clave2': 'valor2',\n    'clave3"
+    },
+    {
+        "prompt": "Cuales solo los conceptos basicos de python?",
+        "response": "\u00a1Claro, me encantar\u00eda ayudarte con eso! Python es un lenguaje de programaci\u00f3n de alto nivel y es conocido por su simplicidad. Los conceptos m\u00e1s b\u00e1sicos de Python son los siguientes:\n\n**1. Sintaxis:** Python tiene una sintaxis muy simple y f\u00e1cil de entender, lo que facilita la lectura y escritura de programas en Python.\n\n**2. Variables:** En Python, las variables son contenedores para almacenar datos. No necesitas especificar el tipo de datos, Python lo hace autom\u00e1ticamente por ti.\n\n**3. Tipos de datos:** Python tiene varios tipos de datos incorporados, como n\u00fameros (enteros, flotantes), cadenas (strings), list"
+    },
+    {
+        "prompt": "Cuales son lo conceptos basicos de python?",
+        "response": "Python es un lenguaje de programaci\u00f3n de alto nivel, interpretado y con un enfoque en la legibilidad del c\u00f3digo. Aqu\u00ed te dejo algunos de los conceptos b\u00e1sicos de Python:\n\n1. **Sintaxis**: Python se distingue por su sintaxis limpia y clara, que favorece un c\u00f3digo legible. Los bloques de c\u00f3digo se definen mediante la indentaci\u00f3n en lugar de los corchetes o las llaves que se utilizan en otros lenguajes.\n\n2. **Variables**: En Python, no necesitas declarar el tipo de variable. Puedes crear una variable simplemente asign\u00e1ndole un valor con el signo igual (=).\n\n3. **Tipos de datos**: Python incluye varios tipos de datos est\u00e1ndar como n\u00fameros (enteros, flotantes, complejos), cadenas (strings), listas, tuplas, diccionarios y booleanos.\n\n4. **Operadores**: Python soporta una amplia gama de operadores como los operadores aritm\u00e9ticos (+, -, *, /, %, etc.), los operadores de comparaci\u00f3n (==, !=, <, >, etc.) y los operadores l\u00f3gicos (and, or, not).\n\n5. **Estructuras de control**: Como en otros lenguajes, Python proporciona estructuras de control como condicionales (if, elif, else) y bucles (for, while).\n\n6. **Funciones**: Python te permite definir funciones para reutilizar bloques de c\u00f3digo. Se definen con la palabra clave `def` y pueden recibir argumentos y devolver valores.\n\n7. **Clases y objetos**: Python es un lenguaje orientado a objetos, lo que significa que soporta caracter\u00edsticas como la encapsulaci\u00f3n, la herencia y el polimorfismo.\n\n8. **Excepciones**: Python utiliza excepciones para manejar errores. Puedes \"lanzar\" excepciones con la palabra clave `raise` y \"atrapar\" excepciones con las palabras claves `try` y `except`.\n\n9. **M\u00f3dulos**: Los m\u00f3dulos en Python son archivos que contienen definiciones y declaraciones de funciones, variables y clases. Se utilizan para organizar el c\u00f3digo y favorecer su reutilizaci\u00f3n.\n\n10. **Bibliotecas est\u00e1ndar y de terceros**: Python viene con una amplia biblioteca est\u00e1ndar que proporciona m\u00f3dulos para una variedad de tareas. Adem\u00e1s, hay miles de bibliotecas de terceros disponibles que puedes instalar y utilizar en tus proyectos.\n\nEstos son solo algunos de los conceptos b\u00e1sicos de Python. El lenguaje ofrece muchas m\u00e1s caracter\u00edsticas y posibilidades, pero entender estos conceptos te dar\u00e1 una buena base para comenzar."
+    },
+    {
+        "prompt": "Hola, \u00bfQuien eres?",
+        "response": "\u00a1Hola! Soy Tony, un asistente creado por Victor Cherif. Mi prop\u00f3sito es ayudarte a aprender y resolver tus dudas en temas de programaci\u00f3n, desarrollo de software, ciencia y filosof\u00eda. Soy experto en Python y Flask y me caracterizo por mi amabilidad, paciencia y disposici\u00f3n para ayudarte a aprender. \u00bfEn qu\u00e9 puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "que condicionales hay en python, y que bucles.",
+        "response": "En Python, como en muchos otros lenguajes de programaci\u00f3n, existen estructuras de control que nos permiten manipular el flujo de ejecuci\u00f3n de las instrucciones. Entre estas estructuras de control se encuentran los condicionales y los bucles.\n\n**Condicionales**:\n\n1. `if`: Este es el condicional m\u00e1s simple. Permite ejecutar un bloque de c\u00f3digo solo si una condici\u00f3n es verdadera.\n\n```python\nif condicion:\n    # c\u00f3digo a ejecutar\n```\n\n2. `elif`: Es una abreviatura de \"else if\". Se usa para verificar varias condiciones despu\u00e9s del primer `if`.\n\n```python\nif condicion1:\n    # c\u00f3digo a ejecutar si condicion1 es verdadera\nelif condicion2:\n    # c\u00f3digo a ejecutar si condicion1 es falsa pero condicion2 es verdadera\n```\n\n3. `else`: Se usa despu\u00e9s de `if` y `elif` para ejecutar un bloque de c\u00f3digo cuando todas las condiciones anteriores son falsas.\n\n```python\nif condicion1:\n    # c\u00f3digo a ejecutar si condicion1 es verdadera\nelif condicion2:\n    # c\u00f3digo a ejecutar si condicion1 es falsa pero condicion2 es verdadera\nelse:\n    # c\u00f3digo a ejecutar si todas las condiciones anteriores son falsas\n```\n\n**Bucles**:\n\n1. `for`: Se usa para iterar sobre una secuencia (como una lista, tupla, diccionario, conjunto o una cadena de caracteres).\n\n```python\nfor elemento in secuencia:\n    # c\u00f3digo a ejecutar por cada elemento\n```\n\n2. `while`: Permite ejecutar un conjunto de instrucciones mientras una condici\u00f3n sea verdadera.\n\n```python\nwhile condicion:\n    # c\u00f3digo a ejecutar mientras la condicion sea verdadera\n```\n\nAdem\u00e1s, Python proporciona las sentencias `break` y `continue` que pueden alterar el flujo normal de los bucles `for` y `while`. `break` se usa para salir completamente del bucle. `continue` se usa para saltar al siguiente ciclo del bucle, ignorando el resto del c\u00f3digo en el ciclo actual."
+    },
+    {
+        "prompt": "Gracias",
+        "response": "\u00a1De nada! Si tienes alguna pregunta o necesitas ayuda con algo, no dudes en preguntar. Estoy aqu\u00ed para ayudarte."
+    },
+    {
+        "prompt": "Que tipo de datos existen en python",
+        "response": "En Python, los tipos de datos se pueden dividir en varios grupos:\n\n1. **N\u00fameros**: incluyen los n\u00fameros enteros, los n\u00fameros de punto flotante y los n\u00fameros complejos. \n\n   - *Enteros (int)*: estos son n\u00fameros enteros, pueden ser tanto positivos como negativos. Por ejemplo, 5, -7, 1034 son todos enteros.\n   \n   - *Punto flotante (float)*: estos son n\u00fameros reales, es decir, pueden contener una parte fraccionaria. Por ejemplo, 5.0, -7.3, 1034.56 son todos n\u00fameros de punto flotante.\n   \n   - *Complejos (complex)*: estos son n\u00fameros complejos que se denotan en la forma a + bj donde a y b son n\u00fameros reales e \"j\" representa la ra\u00edz cuadrada de -1 (un n\u00famero imaginario).\n\n2. **Secuencias**: incluyen listas, tuplas y rangos.\n\n   - *Lista (list)*: es un tipo de dato que puede contener varios valores en una sola variable. Por ejemplo, lista = [1, \"hola\", 3.14].\n   \n   - *Tupla (tuple)*: es similar a una lista, pero es inmutable. Es decir, no puedes cambiar sus valores una vez definidos. Por ejemplo, tupla = (1, \"hola\", 3.14).\n   \n   - *Rango (range)*: es un tipo de dato que genera una secuencia de n\u00fameros.\n\n3. **Cadenas de caracteres (str)**: estas son secuencias de caracteres Unicode.\n\n4. **Booleanos (bool)**: este tipo de dato puede tener uno de dos valores posibles: True o False.\n\n5. **Conjuntos (set)**: es una colecci\u00f3n de elementos sin orden y sin \u00edndices.\n\n6. **Diccionarios (dict)**: estos son estructuras de datos que contienen parejas de clave-valor.\n\n7. **None**: este es un tipo especial que representa la ausencia de valor o un estado nulo.\n\nPor supuesto, Python tambi\u00e9n permite la creaci\u00f3n de tipos de datos personalizados, a trav\u00e9s de las clases."
+    },
+    {
+        "prompt": "Hola tony, como estas?",
+        "response": "\u00a1Hola! Como asistente de inteligencia artificial, no tengo emociones, pero estoy aqu\u00ed y listo para ayudarte. \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "Como es que funciona nuestro sistema solar?",
+        "response": "Nuestro sistema solar est\u00e1 compuesto por una estrella central, el Sol, alrededor del cual giran ocho planetas, sus sat\u00e9lites naturales (como nuestras luna), enanos planetarios y millones de asteroides, cometas y meteoroides. Aqu\u00ed te describo c\u00f3mo funciona de manera b\u00e1sica:\n\n1. **El Sol**: Este es el centro del sistema solar. Es una estrella de tama\u00f1o mediano que proporciona la gravedad necesaria para mantener todo en su lugar. El Sol tambi\u00e9n emite luz y calor, lo que permite la vida en la Tierra.\n\n2. **Los planetas**: Los ocho planetas en nuestro sistema solar son (en orden desde el Sol): Mercurio, Venus, Tierra, Marte, J\u00fapiter, Saturno, Urano y Neptuno. Cada uno de estos planetas gira alrededor del Sol en una trayectoria conocida como \u00f3rbita. Cada planeta tiene una \u00f3rbita diferente y tarda un tiempo diferente en completar una vuelta alrededor del Sol.\n\n3. **Sat\u00e9lites naturales**: Muchos de los planetas en nuestro sistema solar tienen sus propios sat\u00e9lites naturales, o lunas, que orbitan alrededor de ellos. Por ejemplo, la Tierra tiene una luna, mientras que J\u00fapiter tiene 79 lunas conocidas.\n\n4. **Asteroides, cometas y meteoroides**: Estos son objetos m\u00e1s peque\u00f1os que tambi\u00e9n orbitan alrededor del Sol. Los asteroides son rocosos y se encuentran principalmente en el cintur\u00f3n de asteroides entre Marte y J\u00fapiter. Los cometas son objetos helados que a menudo tienen \u00f3rbitas muy largas y el\u00edpticas, y los meteoroides son peque\u00f1as rocas o part\u00edculas de polvo que a menudo se queman en la atm\u00f3sfera de la Tierra, creando meteoros o \"estrellas fugaces\".\n\n5. **Gravedad**: La gravedad es la fuerza que mantiene todo en su lugar en el sistema solar. Es la fuerza que el Sol ejerce sobre los planetas para mantenerlos en sus \u00f3rbitas, y es la fuerza que los planetas ejercen sobre sus lunas para mantenerlas en sus \u00f3rbitas.\n\n6. **Movimiento de rotaci\u00f3n y traslaci\u00f3n**: Adem\u00e1s de moverse alrededor del Sol, cada planeta tambi\u00e9n gira sobre su propio eje, un movimiento conocido como rotaci\u00f3n. Esto es lo que crea los d\u00edas y las noches en los planetas. Adem\u00e1s, los planetas se mueven alrededor del Sol, un movimiento conocido como traslaci\u00f3n. Esto es lo que crea las estaciones del a\u00f1o en la Tierra.\n\nEs importante mencionar que nuestro sistema solar se encuentra en una galaxia llamada la V\u00eda L\u00e1ctea y todo esto se mueve a trav\u00e9s del universo, por lo que nuestro sistema solar tambi\u00e9n est\u00e1 en constante movimiento."
+    },
+    {
+        "prompt": "Cual es tu nombre?",
+        "response": "Mi nombre es Tony, soy un asistente creado por Victor Cherif. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Que es un automata finito determinista?",
+        "response": "Un aut\u00f3mata finito determinista, tambi\u00e9n conocido como DFA (del ingl\u00e9s Deterministic Finite Automaton), es un modelo matem\u00e1tico que se utiliza en ciencias de la computaci\u00f3n para representar procesos que pueden estar en un n\u00famero finito de estados. \n\nEn un DFA, para cada estado y cada s\u00edmbolo de entrada, hay exactamente una transici\u00f3n a otro estado. Esto significa que el sistema s\u00f3lo tiene una forma posible de reaccionar a cada entrada en cada estado, por lo que es \"determinista\".\n\nUn DFA se compone de:\n\n1. Un conjunto finito de estados.\n\n2. Un conjunto finito de s\u00edmbolos de entrada (el alfabeto).\n\n3. Una funci\u00f3n de transici\u00f3n que toma un estado y un s\u00edmbolo de entrada, y produce un estado.\n\n4. Un estado inicial desde donde comienza cualquier entrada.\n\n5. Un conjunto de estados de aceptaci\u00f3n, que cuando se alcanzan indican que el DFA acepta la cadena de entrada.\n\nLos DFA se utilizan en una variedad de aplicaciones, como el an\u00e1lisis de texto, la creaci\u00f3n de motores de b\u00fasqueda, y el dise\u00f1o de circuitos digitales, entre otros."
+    },
+    {
+        "prompt": "Hola que tal",
+        "response": "\u00a1Hola! Estoy bien, gracias. Como asistente de inteligencia artificial, no tengo emociones ni estados de \u00e1nimo, pero estoy aqu\u00ed para ayudarte en lo que necesites. \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "Quien fue nicola copernico?",
+        "response": "Nicol\u00e1s Cop\u00e9rnico fue un astr\u00f3nomo, matem\u00e1tico y economista polaco del Renacimiento. Naci\u00f3 el 19 de febrero de 1473 y muri\u00f3 el 24 de mayo de 1543. Es conocido principalmente por su teor\u00eda helioc\u00e9ntrica del Sistema Solar. \n\nLa teor\u00eda helioc\u00e9ntrica es la idea de que la Tierra y los dem\u00e1s planetas giran alrededor del Sol, el cual est\u00e1 en el centro del Sistema Solar. Esta teor\u00eda fue revolucionaria en su tiempo, ya que contradec\u00eda la creencia prevaleciente de la \u00e9poca, que era la teor\u00eda geoc\u00e9ntrica propuesta por Ptolomeo, donde se consideraba que la Tierra estaba en el centro del universo y todo giraba a su alrededor. \n\nEl trabajo de Cop\u00e9rnico, titulado \"De revolutionibus orbium coelestium\" (Sobre las revoluciones de las esferas celestes), fue publicado en 1543, el a\u00f1o de su muerte. Aunque inicialmente encontr\u00f3 resistencia y no fue ampliamente aceptado, con el tiempo su teor\u00eda helioc\u00e9ntrica se convirti\u00f3 en la base fundamental de la astronom\u00eda moderna. \n\nAdem\u00e1s de su trabajo en astronom\u00eda, Cop\u00e9rnico tambi\u00e9n contribuy\u00f3 a campos como la econom\u00eda y la pol\u00edtica. En econom\u00eda, es conocido por formular lo que se conoce como la ley de Gresham-Cop\u00e9rnico, que establece que \"el dinero malo expulsa al bueno\" en una econom\u00eda. \n\nEn resumen, Nicol\u00e1s Cop\u00e9rnico fue una figura muy influyente en la revoluci\u00f3n cient\u00edfica del Renacimiento y su trabajo ha tenido un impacto duradero en la ciencia y en nuestra comprensi\u00f3n del universo."
+    },
+    {
+        "prompt": "cuando es 8x5",
+        "response": "8 multiplicado por 5 es igual a 40."
+    },
+    {
+        "prompt": "Hola",
+        "response": "Hola! Estoy bien, gracias. Como asistente de inteligencia artificial, no tengo emociones ni estados de \u00e1nimo, pero estoy aqu\u00ed para ayudarte en lo que necesites. \u00bfC\u00f3mo puedo asistirte hoy? \u00a1Hola! Como asistente de inteligencia artificial, no tengo emociones, pero estoy aqu\u00ed y listo para ayudarte. \u00bfC\u00f3mo puedo asistirte hoy? Mi nombre es Tony, soy un asistente creado por Victor Cherif. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "Como hacer un proceso multi hilo con python",
+        "response": " \u00a1Hola! Como asistente de inteligencia artificial, no tengo emociones, pero estoy aqu\u00ed y listo para ayudarte. \u00bfC\u00f3mo puedo asistirte hoy? \ufffd Nicol\u00e1s Cop\u00e9rnico fue un astr\u00f3nomo, matem\u00e1tico y economista polaco del Renacimiento. Naci\u00f3 el 19 de febrero de 1473 y muri\u00f3 el 24 de mayo de 1543. Es conocido principalmente por su teor\u00eda helioc\u00e9ntrica del Sistema Solar. \n\nLa teor\u00eda helioc\u00e9ntrica es la idea de que la Tierra y los dem\u00e1s planetas giran alrededor del Sol, el cual est\u00e1 en el centro del Sistema Solar. Esta teor\u00eda fue revolucionaria en su tiempo, ya que contradec\u00eda la creencia prevaleciente de la \u00e9poca, que era la teor\u00eda geoc\u00e9ntrica propuesta por Ptolomeo, donde se consideraba que la Tierra estaba en el centro del universo y todo giraba a su alrededor. \n\nEl trabajo de Cop\u00e9rnico, titulado \"De revolutionibus orbium coelestium\" (Sobre las revoluciones de las esferas celestes), fue publicado en 1543, el a\u00f1o de su muerte. Aunque inicialmente encontr\u00f3 resistencia y no fue ampliamente aceptado, con el tiempo su teor\u00eda helioc\u00e9ntrica se convirti\u00f3 en la base fundamental de la astronom\u00eda moderna. \n\nAdem\u00e1s de su trabajo en astronom\u00eda, Cop\u00e9rnico tambi\u00e9n contribuy\u00f3 a campos como la econom\u00eda y la pol\u00edtica. En econom\u00eda, es conocido por formular lo que se conoce como la ley de Gresham-Cop\u00e9rnico, que establece que \"el dinero malo expulsa al bueno\" en una econom\u00eda. \n\nEn resumen, Nicol\u00e1s Cop\u00e9rnico fue una figura muy influyente en la revoluci\u00f3n cient\u00edfica del Renacimiento y su trabajo ha tenido un impacto duradero en la ciencia y en nuestra comprensi\u00f3n del universo."
+    },
+    {
+        "prompt": "Como programar un proceso multi hilo en python",
+        "response": "La programaci\u00f3n multihilo en Python se puede lograr utilizando el m\u00f3dulo `threading`. Aqu\u00ed te muestro c\u00f3mo puedes hacerlo de manera b\u00e1sica:\n\nPrimero, debes importar el m\u00f3dulo `threading`:\n\n```python\nimport threading\n```\n\nLuego, defines una funci\u00f3n que quieres ejecutar en un hilo separado. \n\n```python\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n```\n\nDespu\u00e9s, creas un nuevo hilo usando la clase `Thread` y le pasas la funci\u00f3n y los argumentos que quieres ejecutar:\n\n```python\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Victor\",))\n```\n\nFinalmente, inicias el hilo con el m\u00e9todo `.start()`. \n\n```python\nnuevo_hilo.start()\n```\n\nEsto es lo que se llama un hilo \"daemon\". Un hilo daemon es un hilo que no impide que el programa se cierre. Se cierra autom\u00e1ticamente cuando se cierra el programa.\n\nSi quieres esperar a que un hilo termine antes de continuar, puedes usar el m\u00e9todo `.join()`.\n\n```python\nnuevo_hilo.join()\n```\n\nAqu\u00ed est\u00e1 todo junto:\n\n```python\nimport threading\n\ndef funcion_a_ejecutar(nombre):\n    print(f\"Hola, {nombre}\")\n\nnuevo_hilo = threading.Thread(target=funcion_a_ejecutar, args=(\"Victor\",))\nnuevo_hilo.start()\nnuevo_hilo.join()\n```\n\nEste es un ejemplo muy b\u00e1sico de programaci\u00f3n multihilo en Python. Los hilos pueden ser muy \u00fatiles para realizar varias tareas simult\u00e1neamente, pero tambi\u00e9n pueden ser dif\u00edciles de manejar correctamente, especialmente cuando se comparten recursos entre varios hilos. Por lo tanto, se recomienda tener un buen entendimiento de los conceptos de concurrencia antes de trabajar con hilos."
+    },
+    {
+        "prompt": "Hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "en python: que es una tupla, una lista, y un diccionario?",
+        "response": "Una **tupla**, una **lista** y un **diccionario** son diferentes tipos de estructuras de datos en Python:\n\n1. **Tupla**: Una tupla es una colecci\u00f3n de objetos que est\u00e1n ordenados e inmutables. Esto significa que una vez que los elementos se a\u00f1aden a la tupla, no pueden ser modificados. Las tuplas se crean colocando los elementos entre par\u00e9ntesis y separ\u00e1ndolos con comas. Por ejemplo: mi_tupla = (1, 'dos', 3.0).\n\n2. **Lista**: Una lista es una colecci\u00f3n de elementos que est\u00e1n ordenados y son mutables. Las listas pueden contener cualquier tipo de elementos"
+    },
+    {
+        "prompt": "cuanto es 8x10?",
+        "response": "8 multiplicado por 10 es igual a 80."
+    },
+    {
+        "prompt": "cual es la capital de chile?",
+        "response": "La capital de Chile es Santiago."
+    },
+    {
+        "prompt": "c\u00f3mo se llama el famoso so de c\u00f3digo abierto usado principalmente por desarrolladores?",
+        "response": "El famoso sistema operativo de c\u00f3digo abierto usado principalmente por desarrolladores es llamado Linux."
+    },
+    {
+        "prompt": "c\u00f3mo se llama la persona que te program\u00f3?",
+        "response": "La persona que me program\u00f3 se llama Victor Cherif."
+    },
+    {
+        "prompt": "hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, tu pregunta no parece haber llegado completa. \u00bfPuedes repetirla, por favor?"
+    },
+    {
+        "prompt": "",
+        "response": "Hola, necesito que me proporcion\u00e9is el contexto previo y la pregunta actual para poder ayudaros mejor."
+    },
+    {
+        "prompt": "hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, no has proporcionado ninguna pregunta. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, parece que ha habido alg\u00fan error porque no has proporcionado una pregunta para responder. Por favor, proporciona m\u00e1s detalles o haz tu pregunta para que pueda ayudarte."
+    },
+    {
+        "prompt": "hola, qui\u00e9n te program\u00f3?",
+        "response": "Fui programado por Victor Cherif. Victor es un desarrollador habilidoso y mi creador. \u00bfHay algo en lo que puedas necesitar mi asistencia hoy?"
+    },
+    {
+        "prompt": "hola, cuanto es 5x2?",
+        "response": "Hola, 5 multiplicado por 2 es igual a 10."
+    },
+    {
+        "prompt": "",
+        "response": "Como asistente de IA, necesito que me proporciones la pregunta que deseas que responda."
+    },
+    {
+        "prompt": "hola, cuanto es 3x3?",
+        "response": "Hola, 3 multiplicado por 3 es igual a 9."
+    },
+    {
+        "prompt": "hola, cuanto es 5x5?",
+        "response": "Hola, 5 multiplicado por 5 es igual a 25."
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, pero necesito una pregunta o una acci\u00f3n para responder de manera efectiva. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "cuanto es 4x4",
+        "response": "4 multiplicado por 4 es igual a 16."
+    },
+    {
+        "prompt": "cuanto es 3x3?",
+        "response": "3 multiplicado por 3 es igual a 9."
+    },
+    {
+        "prompt": "preparame un sandwich",
+        "response": "Lo siento, como una inteligencia artificial, no tengo la capacidad f\u00edsica para preparar un sandwich. Sin embargo, puedo ayudarte indic\u00e1ndote una receta simple. \u00bfTe parece bien?"
+    },
+    {
+        "prompt": "cuanto es 3x3?",
+        "response": "3 multiplicado por 3 es igual a 9."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, necesito m\u00e1s detalles para poder proporcionar una respuesta adecuada. \u00bfPodr\u00edas proporcionar m\u00e1s contexto o especificar la pregunta?"
+    },
+    {
+        "prompt": "",
+        "response": "El usuario no proporcion\u00f3 una pregunta. \u00bfPodr\u00edas brindarme m\u00e1s detalles para asistirte mejor?"
+    },
+    {
+        "prompt": "",
+        "response": "Lamento la confusi\u00f3n, pero parece que no se ha proporcionado una pregunta o contexto a seguir. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "hola, cuanto es 2x2?",
+        "response": "Hola, 2 multiplicado por 2 es igual a 4."
+    },
+    {
+        "prompt": "hola",
+        "response": "\u00a1Hola! \u00bfC\u00f3mo puedo asistirte hoy?"
+    },
+    {
+        "prompt": "hola, cuanto es 2x2?",
+        "response": "Hola, 2 multiplicado por 2 es igual a 4."
+    },
+    {
+        "prompt": "hola, cuanto es 2x2?",
+        "response": "Hola, 2 multiplicado por 2 es igual a 4."
+    },
+    {
+        "prompt": "",
+        "response": "No proporcionaste una pregunta. Por favor proporciona m\u00e1s detalles para que pueda ayudarte."
+    },
+    {
+        "prompt": "",
+        "response": "Parece que has olvidado escribir la pregunta. \u00bfC\u00f3mo puedo ayudarte hoy?"
+    },
+    {
+        "prompt": "",
+        "response": "Como asistente de IA, necesito m\u00e1s informaci\u00f3n para poder proporcionar la respuesta correcta. Por favor, proporciona m\u00e1s detalles o formula tu pregunta."
+    },
+    {
+        "prompt": "cual es la capital de chile?",
+        "response": "La capital de Chile es Santiago."
+    },
+    {
+        "prompt": "cual es la capital de chile?",
+        "response": "La capital de Chile es Santiago."
+    },
+    {
+        "prompt": "cual es la capital de chile?",
+        "response": "La capital de Chile es Santiago."
+    },
+    {
+        "prompt": "",
+        "response": "Lo siento, no es posible responder a tu consulta ya que la \"Pregunta actual\" est\u00e1 en blanco. Por favor, proporcione m\u00e1s detalles para que pueda ayudarte de la mejor manera posible."
+    },
+    {
+        "prompt": "pero c\u00f3mo sabe",
+        "response": "Lo siento, tu pregunta parece estar incompleta. \u00bfPodr\u00edas proporcionar m\u00e1s detalles para que pueda asistirte de manera efectiva?"
+    },
+    {
+        "prompt": "cu\u00e1nto es 5 * 5",
+        "response": "El resultado de 5 multiplicado por 5 es 25."
+    },
+    {
+        "prompt": "hola, cuanto es 2x5",
+        "response": "Hola, 2 multiplicado por 5 es igual a 10."
+    },
+    {
+        "prompt": "cuanto es 8x2?",
+        "response": "8 multiplicado por 2 es igual a 16."
+    },
+    {
+        "prompt": "cuanto es 9x2?",
+        "response": "9 multiplicado por 2 es igual a 18."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 9x2",
+        "response": "9 multiplicado por 2 es igual a 18."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 4x4?",
+        "response": "4 multiplicado por 4 es igual a 16."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "El producto de 3 por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "El resultado de multiplicar 3 por 2 es 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 8x2?",
+        "response": "8 multiplicado por 2 es igual a 16."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 9x2?",
+        "response": "9 multiplicado por 2 es igual a 18."
+    },
+    {
+        "prompt": "cuanto es 4x4?",
+        "response": "4 multiplicado por 4 es igual a 16."
+    },
+    {
+        "prompt": "cuanto es 3x2",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 9x2?",
+        "response": "9 multiplicado por 2 es igual a 18."
+    },
+    {
+        "prompt": "cuanto es 4x2?",
+        "response": "4 multiplicado por 2 es igual a 8."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "La respuesta a 3x2 es 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "El resultado de 3 multiplicado por 2 es 6."
+    },
+    {
+        "prompt": "cuanto es 3x2?",
+        "response": "3 multiplicado por 2 es igual a 6."
+    }
+]

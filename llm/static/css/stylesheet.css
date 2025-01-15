@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.chat-messages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#respuesta-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.chat-input-container {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.input-group button {
+    margin-right: 10px;
+}
+
+.input-group textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 100px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .chat-messages-container {
+        padding: 10px;
+    }
+    .chat-input-container {
+        padding: 10px;
+    }
+    .input-group {
+        padding: 5px;
+    }
+    .input-group textarea {
+        font-size: 14px;
+        height: 80px;
+        width: 100%; /* Establece un ancho fijo */
+        resize: none; /* Deshabilita la capacidad de redimensionar */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .chat-messages-container {
+        padding: 5px;
+    }
+    .chat-input-container {
+        padding: 5px;
+    }
+    .input-group {
+        padding: 2px;
+    }
+    .input-group textarea {
+        font-size: 12px;
+        height: 60px;
+        width: 100%; /* Establece un ancho fijo */
+        resize: none; /* Deshabilita la capacidad de redimensionar */
+    }
+}

@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM App</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 flex justify-between items-center">
+        <h1 class="text-white text-2xl">LLM - Nicolás Pavez</h1>
+    </nav>
+    <div class="flex flex-1 overflow-hidden">
+        <!-- Chat Area -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <div class="container">
+                <div class="chat-container">
+                    <div class="chat-messages-container">
+                        <div id="respuesta-container">
+                            <div id="respuesta-texto">
+                                {% if respuesta %}
+                                <p>{{ respuesta }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <form method="POST">
+                                <div class="input-group">
+                                    <button id="mic-button" onClick="recognizeVoice()">
+                                        <i class="fas fa-microphone"></i> Mic
+                                    </button>
+                                    <textarea id="user_input" name="user_input"
+                                        class="flex-1 p-2 border border-gray-300 rounded"
+                                        placeholder="Escribe aquí..."></textarea>
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center p-4 bg-white border-t border-gray-200">
+        &copy; 2025 LLM Melk App. Ningún derecho reservado.
+    </footer>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
+            <span class="visually-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="black" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+
+
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
