@@ -19,3 +19,5 @@
 
  SUGERENCIA:
  Ejecutar con CHROME, al realizar pruebas en FIREFOX lee el mensaje derespuesta EN INGLÉS, a diferenciade CHROME que SI lo lee EN ESPAÑOL.
+
+ El método de aprendizaje es bajo la metodología de Aprendizaje Supervisado, el cual tiene prealmacenada respuestas a ciertas preguntas incluidas en los prompts, no obstante, también puede realizar operaciones lógicas, como multiplicaciones que no están en  los datasets/memory o que sean, por ejemplo, cálculos matemáticos. El motor utilizado es GPT-4 para la generación de respuestas. Las respuestas no anidadas en los archivos json son también guardados como parte del aprendizaje propio para tener respuestas   más rápidas o generar conexión de respuestas para complementar y reforzarlas.
